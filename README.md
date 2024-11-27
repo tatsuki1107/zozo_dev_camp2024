@@ -4,5 +4,5 @@
 docker compose build
 ```
 ```
-docker compose run --rm poetry run python main.py
+docker compose run --rm opl main.py
 ```
