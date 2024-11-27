@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  opl:
+    container_name: zozo_dev_camp
+    build: .
+    volumes:
+      - .:/app
+    tty: true
+    ports:
+      - 8886:8888

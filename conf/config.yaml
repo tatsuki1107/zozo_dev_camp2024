@@ -1,0 +1,25 @@
+n_val_seeds: 50
+n_test_samplesizes: 5000
+dim_context: 5
+n_actions: 100
+n_cat_dim: 1
+n_cat_per_dim: 5
+beta: -3.0
+reward_noise: 1.0
+random_state: 12345
+reward_type: "continuous"
+n_popular_items: 30
+max_iter: 30
+
+n_val_samplesizes:
+  - 500
+  - 1000
+  - 1500
+  - 2000
+
+defaults:
+  - _self_
+
+hydra:
+  run:
+    dir: logs/${hydra.job.name}/
